@@ -1,4 +1,4 @@
-.PHONY: deps build develop-site preview-site
+.PHONY: deps build run preview-site
 
 deps:
 	yarn install
@@ -6,8 +6,11 @@ deps:
 build: deps
 	yarn build
 
-develop-site: deps
+run:
 	yarn dev
 
 preview-site: build
-	yarn preview
+	@echo "Serving exported site from ./out at http://localhost:4321"
+	yarn dlx serve -s out -l 4321
+
+
