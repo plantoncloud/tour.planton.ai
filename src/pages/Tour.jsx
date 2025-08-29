@@ -259,13 +259,6 @@ export default function Tour() {
             >
               Start Interactive Tour
             </Button>
-            <Button
-              variant="ghost"
-              onClick={handleClose}
-              className="w-full mt-3 text-gray-500 hover:text-gray-700"
-            >
-              Skip Tour
-            </Button>
           </div>
         </motion.div>
       </div>
@@ -445,16 +438,6 @@ export default function Tour() {
                 <ChevronLeft className="w-4 h-4" />
                 Previous
               </Button>
-
-              <Button
-                variant="ghost"
-                onClick={handleClose}
-                className="flex items-center gap-2 text-gray-500 hover:text-gray-700"
-              >
-                <X className="w-4 h-4" />
-                Skip Tour
-              </Button>
-
               <Button
                 onClick={handleNext}
                 className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
